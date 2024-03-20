@@ -19,18 +19,140 @@ body {
 
 .header {
   min-height: 56px;
+  padding: 16px 64px;
   display: grid;
+  background: #0369cf;
+  color: white;
   grid-template-columns: 1fr 1fr;
-}
-
-.nav {
-  text-align: center;
 }
 
 .nav_list {
   display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 .nav_item {
-  flex-direction: column;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
 }
+
+.nav_item:hover {
+  background-color: #022b54;
+  border-radius: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: url(../public/images/heros/hero-image_4.jpg);
+  background-position: center;
+}
+
+.hero_inner {
+  color: white;
+  filter: none;
+}
+
+.hero_title {
+  font-size: 64px;
+}
+
+.hero_tagline {
+  font-size: 16px;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 32px;
+}
+
+.exlore {
+  width: 100%;
+  margin: 60px auto;
+}
+
+.explore_label {
+  font-size: 32px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.explore_label::after {
+  content: '';
+  margin-top: 16px;
+  display: block;
+}
+
+.posts {
+  display: grid;
+  margin: 32px auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.post-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100px;
+  border-radius: 8px;
+}
+
+.post-item_content {
+  padding: 16px;
+}
+
+.post-item_thumbnail {
+  width: 100%;
+}
+
+.post-item_date {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.post-item__date__author {
+  color: rgb(0, 255, 47);
+  text-decoration: none;
+}
+
+.post-item__title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+}
+
+.post-item__title:hover {
+  opacity: 0.5;
+}
+
+.post-item__title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-item__description {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+
+
