@@ -79,9 +79,9 @@ body {
 }
 
 .hero_title {
-  font-size: 64px;
+  font-size: 48px;
+  padding: 0 16px;
 }
-
 .hero_tagline {
   font-size: 16px;
 }
