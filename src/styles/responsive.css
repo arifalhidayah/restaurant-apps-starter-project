@@ -1,0 +1,84 @@
+.posts {
+    display: grid;
+    grid-gap: 16px;
+    padding-top: 32px;
+  }
+
+@media screen and (max-width: 599px) {
+    .header {
+        display: block;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .header_title {
+        font-size: 24px;
+    }
+
+    .header_menu {
+        font-size: 28px;
+    }
+
+    .nav {
+        top: 109px;
+        left: 0px;
+        z-index: 10;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        -webkit-transform: translate(500px, 0);
+        transform: translate(500px, 0);
+        transition: transform 0.5s ease;
+    }
+    
+    .nav_list {
+        display: block;
+    }
+
+    .nav_item {
+        border-bottom: 1px solid #e0e0e0;
+        width: 100%;
+        text-align: center;
+        background-color: #0369cf;
+    }
+
+    .nav_item:hover {
+        border-radius: 0px;
+    }
+    
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .hero_inner {
+        padding: 0px 32px;
+    }
+
+    .hero_title {
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .header_menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .posts {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero_title {
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
