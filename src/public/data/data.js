@@ -1,5 +1,4 @@
-{
-  "restaurants": [
+const restaurants = [
     {
       "id": "6c7bqjgi84kcowlqdz",
       "name": "Bring Your Phone Cafe",
@@ -82,4 +81,5 @@
       "categories": ["Cafe", "Casual Dining"]
     }
   ]
-}
+
+  export default restaurants
