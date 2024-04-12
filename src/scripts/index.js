@@ -1,6 +1,6 @@
 import '../styles/main.css';
 import '../styles/responsive.css'
-import restaurants from '../public/data/data.js'
+import restaurants from '../public/data/DATA.json'
 import createArticle from './components/article.js'
 
 const menu = document.querySelector('#menu')
@@ -23,7 +23,7 @@ main.addEventListener('click', () => {
 
 const postsContainer = document.querySelector('.posts')
 restaurants.forEach(articleData => {
-const { title, pictureId, categories, city, description } = articleData;
-  const article = createArticle(title, pictureId, categories, city, description);
+const { name, pictureId, categories, city, description } = articleData;
+  const article = createArticle(name, pictureId, categories, city, description);
   postsContainer.appendChild(article);
 });
