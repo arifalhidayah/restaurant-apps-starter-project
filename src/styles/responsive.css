@@ -6,13 +6,13 @@
 
 @media screen and (max-width: 599px) {
     .header {
-        display: block;
         padding: 16px;
-        text-align: center;
+        text-align: right;
     }
 
     .header_title {
         font-size: 24px;
+        text-align: left;
     }
 
     .header_menu {
@@ -20,7 +20,7 @@
     }
 
     .nav {
-        top: 109px;
+        top: 74px;
         left: 0px;
         z-index: 10;
         background-color: white;
