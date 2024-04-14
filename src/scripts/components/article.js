@@ -6,8 +6,8 @@ export default function createArticle(name, pictureId, categories, city, descrip
           <div class="post-item_content">
               <p>
               <a href="#" class="anchor post-item_categories">${categories}</a>
-              dari Kota
-              <a href="#" class="anchor post-item_city">${city}</a>
+              dari
+              <a href="#" class="anchor post-item_city">Kota ${city}</a>
               </p>
               <h1 class="post-item_title"><a href="#">${name}</a></h1>
               <p class="post-item_description">${description}</p>

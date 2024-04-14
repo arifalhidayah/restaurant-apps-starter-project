@@ -1,5 +1,5 @@
-import '../styles/main.css';
-import '../styles/responsive.css'
+import '../styles/main.scss';
+import '../styles/responsive.scss'
 import restaurants from '../public/data/DATA.json'
 import createArticle from './components/article.js'
 
